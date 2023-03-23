@@ -14,5 +14,13 @@ string ageAsStringKescha=Console.ReadLine();
 System.Console.WriteLine("Converting...");
 int ageKescha= Convert.ToInt32(ageAsStringKescha);
 System.Console.WriteLine($"Keschaning yoshi {ageKescha}");
-System.Console.WriteLine($"Kescha {name}dan {age-ageKescha} kichkina!");
+int ageDifference = age - ageKescha;
+System.Console.WriteLine($"The difference between your and Kescha's age is {ageDifference}");
+System.Console.WriteLine($"You are older than KESCHA: {age>ageDifference}");
+System.Console.WriteLine($"You are younger than KESCHA:{age<ageDifference}");
+System.Console.WriteLine($"You are older than or equal KESCHA:{age>=ageDifference}");
+System.Console.WriteLine($"You are younger than or equal KESCHA:{age<=ageDifference}");
+System.Console.WriteLine($"Are you equal to KESCHA:{age==ageDifference}");
+System.Console.WriteLine($"Are you not equal KESCHA:{age!=ageDifference}");
+
 
