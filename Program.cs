@@ -1,18 +1,11 @@
-﻿System.Console.Write("Enter your name:");
-string name=Console.ReadLine();
-string greeting = $"Hello {name}!";
-System.Console.WriteLine(greeting);
-
-System.Console.Write("Enter your age:");
-string ageAsString= Console.ReadLine();
-System.Console.WriteLine("Converting...");
-int age = Convert.ToInt32(ageAsString);
-System.Console.WriteLine($"Successfully converted! {age}");
-
-System.Console.Write("Enter Kescha is age:");
-string ageAsStringKescha=Console.ReadLine();
-System.Console.WriteLine("Converting...");
-int ageKescha= Convert.ToInt32(ageAsStringKescha);
-System.Console.WriteLine($"Keschaning yoshi {ageKescha}");
-System.Console.WriteLine($"Kescha {name}dan {age-ageKescha} kichkina!");
-
+﻿using System;
+System.Console.Write("Type 1st Number:");
+int firstNum = Convert.ToInt32(Console.ReadLine());
+System.Console.Write("Type 2nd Number:");
+int secondNum = Convert.ToInt32(Console.ReadLine());
+System.Console.WriteLine($"1st number is greater than 2nd number:{firstNum>secondNum}");
+System.Console.WriteLine($"1st number is smaller than 2nd number:{firstNum<secondNum}");
+System.Console.WriteLine($"1st number and 2nd number are equal:{firstNum==secondNum}");
+System.Console.WriteLine($"1st number and 2nd number are not equal:{firstNum!=secondNum}");
+System.Console.WriteLine($"1st number is greater than or equal 2nd number:{firstNum>=secondNum}");
+System.Console.WriteLine($"1st number is smaller than or equal 2nd number:{firstNum<=secondNum}");
